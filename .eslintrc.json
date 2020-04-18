@@ -1,0 +1,40 @@
+{
+  "env": {
+  "es6": true,
+      "node": true,
+      "jest/globals": true
+},
+  "extends": ["eslint:recommended","plugin:jest/recommended"],
+  "plugins": [
+    "@typescript-eslint",
+    "jest"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+  "array-bracket-spacing":  [ "error", "always" ],
+      "arrow-spacing": [ "error", { "before": true, "after": true } ],
+      "comma-dangle": [ "error", "always" ],
+      "comma-spacing": ["error", { "before": false, "after": true }],
+      "curly": [ "error", "all" ],
+      "eqeqeq": "warn",
+      "id-match": [ "error", "^([A-Za-z0-9_])+$", { "properties": true } ],
+      "indent": ["error", 2, { "SwitchCase": 1 } ],
+      "key-spacing": "error",
+      "keyword-spacing": "error",
+      "no-case-declarations": 0,
+      "no-multi-spaces": "error",
+      "no-multiple-empty-lines": [ "error", { "max": 1 } ],
+      "no-unused-vars": "warn",
+      "no-var": "error",
+      "object-curly-spacing": [ "error", "always" ],
+      "prefer-const": ["error", {"destructuring": "any","ignoreReadBeforeAssign": false}],
+      "quotes": ["error", "single" ],
+      "semi": [ "error", "always" ],
+      "sort-keys": [ "error", "asc", { "caseSensitive": false, "natural": false } ],
+      "space-before-blocks": "error",
+      "space-before-function-paren": [ "error", { "anonymous": "always", "named": "never" } ],
+      "space-in-parens": [ "error", "never" ],
+      "space-infix-ops": ["error", {"int32Hint": false}]
+}
+}
+
