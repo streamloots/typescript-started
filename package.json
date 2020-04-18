@@ -1,9 +1,13 @@
 {
+  "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.3.0",
     "nodemon": "^2.0.3",
+    "reflect-metadata": "^0.1.13",
+    "ts-jest": "^25.4.0",
     "tslint": "^6.1.1",
-    "typescript": "^3.8.3",
-    "reflect-metadata": "^0.1.13"
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -11,6 +15,6 @@
     "start": "node ./build/index.js",
     "start-debug": "nodemon --inspect ./build/index.js",
     "tslint": "tslint -c tslint.json  -p tsconfig.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   }
 }
